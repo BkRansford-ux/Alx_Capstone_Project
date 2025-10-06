@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Graphic Design",
+    "description": "Creating visual content such as logos, branding, brochures, etc."
+  },
+  {
+    "id": 2,
+    "name": "Front-end Web Development",
+    "description": "Building responsive and interactive websites using modern frameworks."
+  },
+  {
+    "id": 3,
+    "name": "Photography & Videography",
+    "description": "Professional photography and video services for individuals and events."
+  },
+  {
+    "id": 4,
+    "name": "Event Planning & Promotion",
+    "description": "Organizing events, managing logistics, and promoting events online."
+  }
+]

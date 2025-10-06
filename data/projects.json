@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Brand Identity for XYZ Company",
+    "description": "Logo, brand guidelines, business cards, and stationery design.",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce Website UI",
+    "description": "Frontend design & development for an online store.",
+    "image": "https://via.placeholder.com/400x300"
+  },
+  {
+    "id": 3,
+    "title": "Corporate Event Highlights Video",
+    "description": "Videography and editing for a corporate conference.",
+    "image": "https://via.placeholder.com/400x300"
+  }
+]
