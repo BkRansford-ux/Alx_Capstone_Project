@@ -6,14 +6,20 @@ import servicesData from "../../data/services.json";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black text-white">
       <Hero />
-      <section className="py-10">
-        <h2 className="text-3xl font-semibold text-center mb-6">Our Services</h2>
+
+      <section className="py-16 bg-graphite">
+        <h2 className="text-4xl font-semibold text-center text-bee mb-10">
+          Our Services
+        </h2>
         <ServicesList services={servicesData} />
       </section>
-      <section className="py-10 bg-white">
-        <h2 className="text-3xl font-semibold text-center mb-6">Portfolio</h2>
+
+      <section className="py-16 bg-black">
+        <h2 className="text-4xl font-semibold text-center text-bee mb-10">
+          Portfolio
+        </h2>
         <PortfolioGrid />
       </section>
     </div>

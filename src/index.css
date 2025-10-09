@@ -2,12 +2,21 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
-  --color-primary: #2563eb;
+
+  /* Ìæ® Brand Palette */
+  --color-black: #000000;
+  --color-graphite: #1f1f1f;
+  --color-bee: #f6c90e;
+  --color-white: #ffffff;
+
+  /* Optionally keep your old colors for reuse */
+  --color-primary: #2563eb; /* blue ‚Äì can still be used for accents */
   --color-secondary: #1e293b;
 }
 
-/* Global Styles */
+/* Ìºç Global Styles */
 body {
   font-family: var(--font-sans);
-  background-color: color-mix(in srgb, var(--color-secondary) 2%, white);
+  background-color: var(--color-graphite);
+  color: var(--color-white);
 }
