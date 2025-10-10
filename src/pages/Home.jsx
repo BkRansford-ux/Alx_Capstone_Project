@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import ServicesList from "../components/ServicesList";
 import PortfolioGrid from "../components/PortfolioGrid";
+import projectsData from "../../data/projects.json";
 import servicesData from "../../data/services.json";
 
 export default function Home() {
