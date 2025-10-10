@@ -10,13 +10,20 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10">
-      <h2 className="text-4xl font-semibold mb-8">Our Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {services.map((s) => (
-          <ServiceCard key={s.id} service={s} />
+    <section className="bg-graphite text-white min-h-screen py-20 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h1 className="text-5xl font-bold text-bee mb-6">Our Services</h1>
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-12">
+          At Creative Agency, we craft digital experiences that inspire, engage,
+          and elevate your brand.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {services.map((service) => (
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
