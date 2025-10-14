@@ -9,9 +9,11 @@ export default function Portfolio() {
     setProjects(projectsData);
   }, []);
 
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-10">
-      <h2 className="text-4xl font-semibold mb-8">Portfolio Projects</h2>
+   return (
+    <div className="bg-black text-white min-h-screen py-16">
+      <h2 className="text-4xl font-bold text-center text-bee mb-10">
+        Our Portfolio
+      </h2>
       <PortfolioGrid projects={projects} />
     </div>
   );
