@@ -1,8 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Navbar() {
+  const { user, logout } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
@@ -16,7 +25,8 @@ export default function Navbar() {
       >
         Creative Agency
       </Link>
-      <div className="space-x-6 text-lg">
+
+      <div className="space-x-6 text-lg flex items-center">
         <Link to="/about" className="hover:text-bee transition-colors">
           About
         </Link>
@@ -29,6 +39,44 @@ export default function Navbar() {
         <Link to="/contact" className="hover:text-bee transition-colors">
           Contact
         </Link>
+
+        {!user ? (
+          <>
+            <Link to="/login" className="hover:text-bee transition-colors">
+              Login
+            </Link>
+            <Link
+              to="/register"
+              className="border border-bee text-bee px-3 py-1 rounded-lg hover:bg-bee hover:text-black transition"
+            >
+              Sign Up
+            </Link>
+          </>
+        ) : (
+          <>
+            {user.role === "admin" ? (
+              <Link
+                to="/admin/dashboard"
+                className="hover:text-bee transition-colors"
+              >
+                Admin Panel
+              </Link>
+            ) : (
+              <Link
+                to="/client/dashboard"
+                className="hover:text-bee transition-colors"
+              >
+                Dashboard
+              </Link>
+            )}
+            <button
+              onClick={handleLogout}
+              className="ml-4 text-white hover:text-bee transition-colors"
+            >
+              Logout
+            </button>
+          </>
+        )}
       </div>
     </motion.nav>
   );
