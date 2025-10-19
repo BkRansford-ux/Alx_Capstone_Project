@@ -36,8 +36,7 @@ export default function App() {
             <Route path="/project/:id" element={<ProjectDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-	    <Route path="/admin/projects" element={<ManageProjects />} />
-
+	    
             {/* Auth Routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
