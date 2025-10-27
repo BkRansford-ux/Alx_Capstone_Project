@@ -17,16 +17,18 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-graphite text-white shadow-md px-6 py-4 flex justify-between items-center fixed w-full top-0 z-50"
+      className="bg-black/90 backdrop-blur-md text-white shadow-md px-6 py-4 flex justify-between items-center fixed w-full top-0 z-50 border-b border-bee"
     >
+      {/* Brand / Logo */}
       <Link
         to="/"
         className="text-2xl font-bold text-bee hover:text-yellow-400 transition-colors"
       >
-        Creative Agency
+        Creative <span className="text-white">Agency</span>
       </Link>
 
-      <div className="space-x-6 text-lg flex items-center">
+      {/* Navigation Links */}
+      <div className="flex items-center space-x-6 text-lg">
         <Link to="/about" className="hover:text-bee transition-colors">
           About
         </Link>
@@ -40,6 +42,7 @@ export default function Navbar() {
           Contact
         </Link>
 
+        {/* Auth / Role-based Links */}
         {!user ? (
           <>
             <Link to="/login" className="hover:text-bee transition-colors">
@@ -54,6 +57,15 @@ export default function Navbar() {
           </>
         ) : (
           <>
+            {/* 👋 Welcome message */}
+            <span className="text-sm text-gray-300">
+              Welcome,{" "}
+              <span className="font-semibold text-bee">
+                {user.name || "User"}
+              </span>
+              👋
+            </span>
+
             {user.role === "admin" ? (
               <Link
                 to="/admin/dashboard"

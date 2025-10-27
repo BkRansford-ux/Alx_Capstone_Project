@@ -21,6 +21,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import ManageBookings from "./pages/admin/ManageBookings";
 import ManageProjects from "./pages/admin/ManageProjects";
 import ManageUsers from "./pages/admin/ManageUsers";
+import ResetPassword from "./pages/auth/ResetPassword";
 
 export default function App() {
   return (
@@ -40,7 +41,8 @@ export default function App() {
             {/* Auth Routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-
+            <Route path="/reset-password" element={<ResetPassword />} />
+            
             {/* Client Routes (Protected) */}
             <Route
               path="/client/dashboard"
