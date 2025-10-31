@@ -1,11 +1,11 @@
-# í¼Ÿ Creative Agency â€” ALX Capstone Project
+# ï¿½ï¿½ï¿½ Creative Agency â€” ALX Capstone Project
 
 Welcome to **Creative Agency**, a modern and fully responsive web application built with **React** and **Tailwind CSS v4**.  
 This project showcases a creative agencyâ€™s portfolio, services, and contact section â€” designed and developed as part of the **ALX Frontend Capstone Project**.
 
 ---
 
-## íº€ Features
+## ï¿½ï¿½ï¿½ Features
 
 âœ… **Modern Responsive Design** â€” Built with Tailwind CSS v4  
 âœ… **Dynamic Routing** â€” Smooth navigation between pages  
@@ -17,7 +17,7 @@ This project showcases a creative agencyâ€™s portfolio, services, and contact se
 
 ---
 
-## í» ï¸ Tech Stack
+## ï¿½ï¿½ï¿½ï¸ Tech Stack
 
 | Category | Tools Used |
 |-----------|-------------|
@@ -30,7 +30,7 @@ This project showcases a creative agencyâ€™s portfolio, services, and contact se
 
 ---
 
-## í³ Folder Structure
+## ï¿½ï¿½ï¿½ Folder Structure
 
 ALX_Capstone_Project/
 â”‚
@@ -82,7 +82,7 @@ npm install
 npm run dev
 4ï¸âƒ£ Build for Production
 npm run build
-í·  Project Overview
+ï¿½ï¿½ï¿½ Project Overview
 The Creative Agency app demonstrates frontend development best practices:
 
 Component-based React architecture
@@ -95,21 +95,21 @@ Modern Tailwind-based responsive styling
 
 Framer Motion for enhanced interactivity
 
-í³¸ Screenshots (Add Later)
+ï¿½ï¿½ï¿½ Screenshots (Add Later)
 Home	Portfolio	Contact
 		
 
-í³¬ Contact
+ï¿½ï¿½ï¿½ Contact
 Developer: Bk Ransford
 GitHub: https://github.com/BkRansford-ux
 Email: bkransford0@gmail.com
 
-í¼ Live Demo
+ï¿½ï¿½ï¿½ Live Demo
 Add your live link here once deployed (e.g., on Netlify or Vercel).
 
-í·¾ License
+ï¿½ï¿½ï¿½ License
 This project is licensed under the MIT License.
 
-í²¡ Built with creativity, code, and React â€” by Bright Ayensu.
+ï¿½ï¿½ï¿½ Built with creativity, code, and React â€” by Bk Ransford
 
 
